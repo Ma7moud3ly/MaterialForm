@@ -43,10 +43,6 @@ public abstract class FormRoomDatabase extends RoomDatabase {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
-            /*databaseWriteExecutor.execute(() -> {
-                FavBooksDao dao = INSTANCE.dao();
-                dao.insert(new FavBooks(BookEntry.serializeBook(MyApp.books.get(500))));
-            });*/
         }
     };
 }
